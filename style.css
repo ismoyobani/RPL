@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #34483b;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #6f8f72,
+        #527258
+    );
+
+    color: white;
+    padding: 75px 20px;
+    text-align: center;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #dfe9d8;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #edf3e9;
+    font-size: 16px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #fffdf7;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e2dfd1;
+
+    box-shadow: 0 8px 25px rgba(72, 91, 70, 0.08);
+
+    margin-bottom: 45px;
+}
+
+.welcome-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e4ecdf;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+.welcome h2 {
+    margin: 0 0 8px;
+
+    color: #49684e;
+}
+
+.welcome p {
+    margin: 0;
+
+    color: #68766b;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title .label {
+    color: #789478;
+
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    color: #3f5944;
+
+    font-size: 25px;
+}
+
+/* =========================
+   ALAT
+========================= */
+
+.alat-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.alat {
+    background-color: #fffdf7;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e2dfd1;
+
+    box-shadow: 0 8px 25px rgba(72, 91, 70, 0.07);
+
+    transition: all 0.3s ease;
+}
+
+.alat:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(72, 91, 70, 0.13);
+}
+
+.alat-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8eee3;
+
+    border-radius: 14px;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.alat h3 {
+    margin: 0;
+
+    color: #49684e;
+
+    font-size: 20px;
+}
+
+.jumlah-label {
+    color: #889289;
+
+    font-size: 13px;
+
+    margin: 20px 0 3px;
+}
+
+.jumlah {
+    margin: 0 0 18px;
+
+    color: #34483b;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.jumlah span {
+    font-size: 14px;
+
+    font-weight: normal;
+
+    color: #7c887e;
+}
+
+.kondisi {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background-color: #e2eee1;
+
+    color: #527258;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   WAKTU
+========================= */
+
+.waktu {
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #7b857d;
+
+    font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 70px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background-color: #3f5944;
+
+    color: #edf3e9;
+}
+
+footer p {
+    margin: 0 0 8px;
+
+    font-size: 15px;
+}
+
+footer small {
+    color: #bdcdbd;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 55px 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .alat-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .welcome {
+        flex-direction: column;
+    }
+
+}
